@@ -23,3 +23,20 @@ RESTful API using Flask that implements a TODO list
 5. Handle custom exception when a TODO item is not found.
 
 6. Unit tests for all api methods and responses
+
+Example commands to use this app:
+
+1. GET the list:
+   curl http://localhost:5000/todos
+
+2. GET a single task:
+   curl http://localhost:5000/todos/todo3
+
+3. DELETE a task:
+   curl http://localhost:5000/todos/todo2 -X DELETE -v
+
+4. Add a new task:
+   curl http://localhost:5000/todos -d "task=something new" -X POST -v
+
+5. Update a task:
+   curl http://localhost:5000/todos/todo3 -d "task=something different" -X PUT -v
